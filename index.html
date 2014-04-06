@@ -1,0 +1,159 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Coolness Genie</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+        
+        <script type="text/javascript">
+			function ShowHide(id){
+				if(document.getElementById(id).style.display == 'none') { document.getElementById(id).style.display='block'; }
+				else { document.getElementById(id).style.display = 'block'; }; }
+		</script>
+
+        
+    </head>
+    <body role="document">
+    	
+    	<!--
+    	<script language="JavaScript" type="text/javascript">
+    		function ajaxFunction(){
+				var ajaxRequest;  // The variable that makes Ajax possible!
+				
+				try{
+					// Opera 8.0+, Firefox, Safari
+					ajaxRequest = new XMLHttpRequest();
+				} catch (e){
+					// Internet Explorer Browsers
+					try{
+						ajaxRequest = new ActiveXObject("Msxml2.XMLHTTP");
+					} catch (e) {
+						try{
+							ajaxRequest = new ActiveXObject("Microsoft.XMLHTTP");
+						} catch (e){
+							// Something went wrong
+							alert("Your browser broke!");
+							return false;
+						}
+					}
+				}
+			}
+    	</script>
+    -->
+        	
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        	<div class="container">
+        		<div class="navbar-header">
+        			<a class="navbar-brand" href="index.html">Coolness Genie</a>
+        		</div>
+        	</div>
+        </div>
+        
+        
+        <br><br><br><br>
+	        <div class="container theme-showcase" role="main">
+	        	
+	        	<div class="jumbotron">
+	        		<h1>Hello coolness seeker!</h1>
+	        		<p>This is the Coolness Genie, where all of your questions will be answered. Please, 
+	        			remove your shoes at the door and prepare to have your coolness determined.
+	        		</p>
+	        		<p><a onclick="ShowHide('Question1');" class="btn btn-primary btn-lg" role="button">Begin the evaluation &raquo;</a></p>
+	        	</div>
+	        	
+	        	<div id="Question1" style="display: none">
+		        	<div class="page-header">
+		        		<h3>Question #1: What is your normal mode of dress?</h3>
+		        	</div>
+		        	
+		        	<div class="row">
+	        			<div class="col-lg-6">
+	        				<div class="input-group">
+	        					<input type="text" class="form-control">
+	        				</div><br>
+	        				<p><a onclick="ShowHide('Question2');" class="btn btn-primary" role="button" href="#Question2">Next &raquo;</a></p>
+	        			</div>
+	        		</div>
+	        	</div>
+	        	
+	        	<div id="Question2" style="display: none">
+		        	<div class="page-header">
+		        		<h3>Question #2: What is your primary hobby?</h3>
+		        	</div>
+		        	
+		        	<div class="row">
+	        			<div class="col-lg-6">
+	        				<div class="input-group">
+	        					<input type="text" class="form-control">
+	        				</div><br>
+	        				<p><a onclick="ShowHide('Question3');" class="btn btn-primary" role="button" href="#Question2">Next &raquo;</a></p>
+	        			</div>
+	        		</div>
+	        	</div>
+	        	
+	        	<div id="Question3" style="display: none">
+		        	<div class="page-header">
+		        		<h3>Question #3: How flashy is your bling?</h3>
+		        	</div>
+		        	
+					<div class="row">
+	        			<div class="col-lg-6">
+	        				<div class="input-group">
+	        					<input type="text" class="form-control">
+	        				</div><br>
+	        				<p><a onclick="ShowHide('pre-Calculator');" class="btn btn-primary" role="button" href="#Question2">Next &raquo;</a></p>
+	        			</div>
+	        		</div>
+	        	</div>
+	        	
+	        	<div id="pre-Calculator" style="display: none">
+	        		<br><br>
+	        		<div class="alert alert-success">
+	        			<strong>Well done!</strong> You have successfully covered all of the questions. When you are ready, press the button below to calculate your coolness.
+	        		</div>
+	        		<p><a onclick="ShowHide('pre-Calculator');" class="btn btn-primary" role="button" href="calculating.html">Calculate! &raquo;</a></p>
+	        	</div>
+	    	
+	    	
+	    	<br><br>
+		
+		<footer>
+        	<p class="pull-right"><a href="#">Back to top</a></p>
+        	<p>&copy; Kevin Pietrow, 2014 </p>
+        </footer>
+	        </div>
+		
+		
+		
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
